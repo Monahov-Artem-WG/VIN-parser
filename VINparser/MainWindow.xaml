@@ -1,0 +1,22 @@
+﻿<Window x:Class="VINparser.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VINparser"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350." Width="380" WindowStyle="ToolWindow" ResizeMode="NoResize">
+    <Grid>
+        <Button Content="Расшифровать" Margin="90,0,90,10" VerticalAlignment="Bottom" Height="26" FontSize="18" RenderTransformOrigin="1.06,1.446" Grid.Row="2"/>
+        <TextBlock Margin="23,0,23,47" TextWrapping="Wrap" Text="Введите VIN:" Height="22" FontSize="18" VerticalAlignment="Bottom" Grid.Row="1"/>
+        <TextBox Height="32" Margin="23,0,23,10" TextWrapping="Wrap" VerticalAlignment="Bottom" Grid.Row="1"/>
+        <Image HorizontalAlignment="Left" Height="122" Margin="90,20,0,0" VerticalAlignment="Top" Width="194" Source="Resources/car_3.jpg" IsHitTestVisible="False" Stretch="Uniform" StretchDirection="Both"/>
+        <TextBlock x:Name="Error_block" HorizontalAlignment="Left" Margin="23,15,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="328"/>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+    </Grid>
+</Window>
